@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 홈페이지</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(178, 217, 233);
+            
+        }
+
+        .wrap1 {
+            width: 1830px;
+            height: 3000px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrap2 {
+            width: 60px;
+            height: 3000px;
+            border: 2px solid grey;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 5px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            height: 100px;
+            border: 2px solid blue;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #header1 {
+            border: 3px solid green;
+            width: 20%;
+            height: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 10px;
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #header1:hover {
+            color: aqua;
+            font-size: 130%;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        #header1 + div {
+            border: 2px solid orange;
+            width: 40%;
+        }
+
+        li>a {
+            padding: 30px;
+            margin-left: 28px;
+            margin-right: 28px;
+
+        }
+
+        ul {
+            list-style-type: none;
+            border: 5px solid grey;
+            width: 40%;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+
+        }
+
+        ul>li a {
+            text-decoration: none;
+            color: #000;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        ul li>a:hover {
+            color: aqua;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: black;
+        }
+
+        .main1 {
+            width: 100%;
+            height: 780px;
+            border: 2px solid green;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        #main1-1 {
+            border: 4px solid red;
+            height: 100%;
+            width: 60%;
+            box-sizing: border-box;
+        }
+
+        #main1-2 {
+            border: 4px solid red;
+            height: 100%;
+            width: 40%;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 7%;
+        }
+        #msgImg.active {
+            animation: send 3s linear 0s 1 alternate;
+        }
+        @keyframes send {
+            0%{
+                transform: translate(0px, 0px);
+            }
+            20%{
+                transform: translate(20px, 0px);
+            }
+            40%{
+                transform: translate(40px, 0px);
+            }
+            60%{
+                transform: translate(60px, 0px);
+            }
+            80%{
+                transform: translate(80px, 0px);
+            }
+            100%{
+                transform: translate(100px, 0px);
+            }
+        }
+
+        .main2 {
+            width: 100%;
+            height: 780px;
+            border: 2px solid rgb(216, 143, 46);
+            box-sizing: border-box;
+        }
+
+        .main3 {
+            width: 100%;
+            height: 1200px;
+            border: 3px solid rgb(87, 187, 212);
+            box-sizing: border-box;
+        }
+
+        #footer {
+            width: 100%;
+            height: 140px;
+            background-color: rgb(233, 232, 232);
+            border: 3px solid rgb(223, 79, 146);
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 20px;
+            font-weight: bold;
+        }
+        #sendname {
+            width: 80%;
+            height: 25px;
+        }
+        #sendbutton {
+            width: 80%;
+            height: 30px;
+            background-color: rgb(48, 82, 192);
+            color: white;
+            font-weight: bold;
+        }
+        #main1-1 > pre {
+            text-align: center;
+            padding-top: 20%
+        }
+        #sendarea {
+            width: 80%;
+            height: 270px;
+            resize: none;
+        }
+        #sendname {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        #sendarea {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #sendbutton {
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px 2px blue;
+        }
+        #sendbutton:hover {
+            background-color: rgb(48, 96, 199);
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="wrap1">
+            <div class="header">
+                <a href="" id="header1">
+                    <img src="" alt="𝓚𝓲𝓶 𝓲𝓵 𝓱𝔂𝓮𝓸𝓷">
+                    김일현의 포트폴리오
+                </a>
+                <div></div>
+                <ul calss="header2">
+                    <li id="header2"><a href="">About_me</a></li>
+                    <li id="header3"><a href="">Skills</a></li>
+                    <li id="header4"><a href="">Project</a></li>
+                    <li id="header5"><a href="">Archiving</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="main1">
+                    <div id="main1-1">
+                        <pre>
+안녕하세요 : )
+주니어 Frontend 개발자 김일현 입니다.
+
+자기소개서
+</pre>
+
+<pre>
+About me
+김일현
+2001.03.17
+경기도 시흥시
+kih3915@gmail.com
+연락처 : 010-XXXX-XXXX
+대림대학교 ( 호텔조리과, 조리제과학부 )
+블로그 링크
+                        </pre>
+                    </div>
+                    <div id="main1-2">
+                        <h1>CONTACT</h1>
+                        <p>편지지 이미지</p>
+                        <p>작성자 이름</p>
+                        <p>작성할 내용</p>
+                        <br>
+                        <button id="sendbutton">SEND</button>
+                        
+                    </div>
+                </div>
+                <div class="main2" id="main2">
+                <pre>
+             사용가능한 프로그램 <br>
+             (숙련도-그래프로)
+             <img src="" alt="">
+             HTML
+             <img src="" alt="">
+             CSS
+             <img src="" alt="">
+             JavaScript
+             <img src="" alt="">
+             jQuery
+             <img src="" alt="">
+             Java
+             <img src="" alt="">
+             Figma
+             <img src="" alt="">
+             Github
+             
+                </pre>
+                </div>
+                <div class="main3" id="main3">
+                    프로젝트 이미지 (썸네일)
+                    프로젝트 제목
+                    프로젝트 간단한 설명
+                </div>
+            </div>
+            <div id="footer">
+                개발자 : 김일현 <br>
+                주소 : 경기도 시흥시 수인로 3312번길 16, 109동 901호 <br>
+                이메일 : kih3915@naver.com <br>
+                전화번호 : 010-XXXX-XXXX <br>
+            </div>
+        </div>
+        <div class="wrap2">
+            <a href="#main1-2"><img src="resources/편지지 3.png" alt="contact로 이동" width="60px" height="50px"></a>
+            <a href="#main2"><img src="resources/프로그램 스킬 이미지.png" alt="skills로 이동" width="60px" height="50px"></a>
+            <a href="#main3"><img src="resources/프로젝트 이미지.jpg" alt="project 부분으로 이동" width="60px" height="50px"></a>
+        </div>
+    </div>
+</body>
+
+</html>
